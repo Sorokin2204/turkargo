@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <section
+      class="home-top-section"
+      style="background-image: url(img/header-banner.webp)"
+    >
+      @@include('parts/_header.html')
+      <div class="home-banner">
+        <div class="container">
+          <div class="home-banner__inner">
+            <h1 class="home-banner__title">
+              Быстрая и надежная <span>доставка грузов</span> из Турции
+            </h1>
+            <p class="home-banner__subtitle">
+              Оставьте заявку на доставку и получите скидку на первую отправку
+            </p>
+            <button class="home-banner__btn-feedback btn">
+              Оставить заявку
+            </button>
+            <ul class="home-banner__adv">
+              <li class="home-banner__adv-item">
+                <h3 class="home-banner__adv-title">Быстро</h3>
+                <p class="home-banner__adv-text">
+                  Перевезем ваш груз в максимально короткие сроки
+                </p>
+              </li>
+              <div class="home-banner__adv-divider"></div>
+              <li class="home-banner__adv-item">
+                <h3 class="home-banner__adv-title">Выгодно</h3>
+                <p class="home-banner__adv-text">
+                  Предоставляем качественный сервис по оптимальным ценам
+                </p>
+              </li>
+              <div class="home-banner__adv-divider"></div>
+              <li class="home-banner__adv-item">
+                <h3 class="home-banner__adv-title">Быстро</h3>
+                <p class="home-banner__adv-text">
+                  Гарантируем доставку вашего груза в целости и сохранности
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="home-banner__social">
+          <li class="home-banner__social-item">
+            <a href="#" class="home-banner__social-link"></a>
+          </li>
+          <li class="home-banner__social-item">
+            <a href="#" class="home-banner__social-link"></a>
+          </li>
+          <li class="home-banner__social-item">
+            <a href="#" class="home-banner__social-link"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="home-price">
+        <div class="container">
+          <div class="home-price__inner">
+            <h2 class="home-price__title title-h2-light">
+              Цены на <span>доставку грузов</span> из Турции
+            </h2>
+            <p class="home-price__subtitle">
+              *Цены на доставку меняются взависимости от веса и типа груза
+            </p>
+            <ul class="home-price__country">
+              <li class="home-price__country-item">
+                <img
+                  src="img/ru-flag.webp"
+                  alt=""
+                  class="home-price__country-img"
+                />
+                <h3 class="home-price__country-title">Россия</h3>
+                <ul class="home-price__country-type">
+                  <li
+                    class="home-price__country-type-item"
+                    style="--data-icon: url(../img/icons/plane.svg)"
+                  >
+                    Авиа от 6$
+                  </li>
+                  <li
+                    class="home-price__country-type-item"
+                    style="--data-icon: url(../img/icons/truck.svg)"
+                  >
+                    Авто от 1.5$
+                  </li>
+                </ul>
+              </li>
+              <li class="home-price__country-item">
+                <img
+                  src="img/kz-flag.webp"
+                  alt=""
+                  class="home-price__country-img"
+                />
+                <h3 class="home-price__country-title">Казахстан</h3>
+                <ul class="home-price__country-type">
+                  <li
+                    class="home-price__country-type-item"
+                    style="--data-icon: url(../img/icons/plane.svg)"
+                  >
+                    Авиа от 5.2$
+                  </li>
+                  <li
+                    class="home-price__country-type-item"
+                    style="--data-icon: url(../img/icons/truck.svg)"
+                  >
+                    Авто от 1.5$
+                  </li>
+                </ul>
+              </li>
+              <li class="home-price__country-item">
+                <img
+                  src="img/uk-flag.webp"
+                  alt=""
+                  class="home-price__country-img"
+                />
+                <h3 class="home-price__country-title">Украина</h3>
+                <ul class="home-price__country-type">
+                  <li
+                    class="home-price__country-type-item"
+                    style="--data-icon: url(../img/icons/plane.svg)"
+                  >
+                    Авиа от 6$
+                  </li>
+                  <li
+                    class="home-price__country-type-item"
+                    style="--data-icon: url(../img/icons/truck.svg)"
+                  >
+                    Авто от 1.5$
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-adv">
+      <div class="container">
+        <div class="home-adv__inner">
+          <h2 class="home-adv__title title-h2-dark">
+            Наши <span>преимущества</span>
+          </h2>
+          <ul class="home-adv__adv">
+            <li class="home-adv__adv-item">
+              <img src="img/adv-1.webp" alt="" class="home-adv__adv-img" />
+              <div class="home-adv__adv-box">
+                <h3 class="home-adv__adv-title">Надежная доставка</h3>
+                <p class="home-adv__adv-text">
+                  Наша компания несет ответственность за ваш груз с момента
+                  получения до выдачи
+                </p>
+              </div>
+            </li>
+            <li class="home-adv__adv-item">
+              <img src="img/adv-2.webp" alt="" class="home-adv__adv-img" />
+              <div class="home-adv__adv-box">
+                <h3 class="home-adv__adv-title">Надежная доставка</h3>
+                <p class="home-adv__adv-text">
+                  Наша компания несет ответственность за ваш груз с момента
+                  получения до выдачи
+                </p>
+              </div>
+            </li>
+            <li class="home-adv__adv-item">
+              <img src="img/adv-3.webp" alt="" class="home-adv__adv-img" />
+              <div class="home-adv__adv-box">
+                <h3 class="home-adv__adv-title">Надежная доставка</h3>
+                <p class="home-adv__adv-text">
+                  Наша компания несет ответственность за ваш груз с момента
+                  получения до выдачи
+                </p>
+              </div>
+            </li>
+            <li class="home-adv__adv-item">
+              <img src="img/adv-4.webp" alt="" class="home-adv__adv-img" />
+              <div class="home-adv__adv-box">
+                <h3 class="home-adv__adv-title">Надежная доставка</h3>
+                <p class="home-adv__adv-text">
+                  Наша компания несет ответственность за ваш груз с момента
+                  получения до выдачи
+                </p>
+              </div>
+            </li>
+            <li class="home-adv__adv-item">
+              <img src="img/adv-5.webp" alt="" class="home-adv__adv-img" />
+              <div class="home-adv__adv-box">
+                <h3 class="home-adv__adv-title">Надежная доставка</h3>
+                <p class="home-adv__adv-text">
+                  Наша компания несет ответственность за ваш груз с момента
+                  получения до выдачи
+                </p>
+              </div>
+            </li>
+            <li class="home-adv__adv-item">
+              <img src="img/adv-6.webp" alt="" class="home-adv__adv-img" />
+              <div class="home-adv__adv-box">
+                <h3 class="home-adv__adv-title">Надежная доставка</h3>
+                <p class="home-adv__adv-text">
+                  Наша компания несет ответственность за ваш груз с момента
+                  получения до выдачи
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="home-middle-section"
+      style="background-image: url(img/discount-bg.webp)"
+    >
+      <div class="home-discount">
+        <div class="container">
+          <div class="home-discount__inner">
+            <div class="home-discount__content">
+              <h2 class="home-discount__title title-h2-light">
+                Получить <span>скидку</span>
+              </h2>
+              <p class="home-discount__text">
+                Для того, чтобы дать вам лучшие условия по доставке, мы должны
+                знать какой вид товара вы хотите отправить. Оставьте заявку на
+                доставку и получите скидку на первую отправку.
+              </p>
+              <form class="home-discount__form">
+                <input
+                  type="text"
+                  class="home-discount__input input"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  type="text"
+                  class="home-discount__input input"
+                  placeholder="Город"
+                />
+                <input
+                  type="tel"
+                  class="home-discount__input input"
+                  placeholder="Номер телефона"
+                />
+                <button class="home-discount__btn-feedback btn">
+                  Оставить заявку
+                </button>
+              </form>
+            </div>
+            <img src="img/discount-1.webp" alt="" class="home-discount__img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="home-plan">
+        <div class="container-header">
+          <div class="home-plan__inner">
+            <h2 class="home-plan__title title-h2-light">
+              Схема <span>работы</span>
+            </h2>
+            <img src="img/discount-2.webp" class="home-plan__img" />
+
+            <div class="home-plan__content">
+              <ol class="home-plan__list">
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                  <p class="home-plan__item-text">
+                    Вы оставляете заявку на
+                    <br />сайте или по телефону
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                  <p class="home-plan__item-text">
+                    Согласовываем сроки
+                    <br />и тарифы
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                  <p class="home-plan__item-text">
+                    Вам присваевается клиентский
+                    <br />код и предоставляется адрес склада в Турции
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+
+                  <p class="home-plan__item-text">
+                    Прием вашего груза на складе карго
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                  <p class="home-plan__item-text">
+                    Оформление и подготовка груза к отправке
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                  <p class="home-plan__item-text">
+                    Растаможка и транспортировка груза
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                  <p class="home-plan__item-text">
+                    По прибытию груза менеджер связывается с Вами <br />
+                    для оплаты доставки и передачи груза
+                  </p>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+                <li class="home-plan__item">
+                  <div class="home-plan__elips">
+                    <div class="home-plan__elips-light"></div>
+                    <div class="home-plan__elips-1"></div>
+                    <div class="home-plan__elips-3"></div>
+                    <div class="home-plan__elips-2"></div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-news">
+      <div class="container-header">
+        <div class="home-news__inner">
+          <h2 class="home-news__title title-h2-dark">
+            Новости <span>логистики</span>
+          </h2>
+          <ul class="news news--light">
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <img src="img/news-1.webp" alt="" class="news__img" />
+                <h3 class="news__title">
+                  Вспышка короновируса на юге Китая вызвала задержку в портах
+                </h3>
+              </a>
+              <p class="news__text">
+                Вспышка коронавируса на юге Китая вызвала задержку в портах,
+                которые являются критически важными для мировой торговли. Это
+                привело к глобальной задержке движения, которая может
+                задержаться на несколько месяцев.
+              </p>
+              <span class="news__date">24.05.2021</span>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <img src="img/news-1.webp" alt="" class="news__img" />
+                <h3 class="news__title">
+                  Временное упрощение таможенного оформления автомобилей
+                </h3>
+              </a>
+              <p class="news__text">
+                С 15 июня 2021 вводится новая модель налогообложения ввозимых на
+                таможенную территорию Украины
+              </p>
+              <span class="news__date">24.05.2021</span>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <img src="img/news-1.webp" alt="" class="news__img" />
+                <h3 class="news__title">В Турции до 17 мая локдаун</h3>
+              </a>
+              <p class="news__text">
+                Сегодня президент Турции провел заседание Кабинета министров по
+                итогам которого были приняты следующие решения
+              </p>
+              <span class="news__date">24.05.2021</span>
+            </li>
+          </ul>
+          <button class="home-news__btn-more btn">Все новости</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-project">
+      <div class="container-header">
+        <div class="home-project__inner">
+          <h2 class="home-project__title title-h2-light">
+            Наши <span>проекты</span>
+          </h2>
+          <p class="home-project__subtitle">
+            Помимо платформы Laleli.Online у нас так же и другие проекты с
+            которыми вы можете ознакомиться ниже
+          </p>
+          <ul class="home-project__list">
+            <li class="home-project__item">
+              <img
+                src="img/project-1.webp"
+                alt=""
+                class="home-project__item-img"
+              />
+              <h3 class="home-project__item-title">Shopping Istambul</h3>
+              <p class="home-project__item-text">
+                Shopping Istambul — это комплекс различных услуг по поиску и
+                оптовой закупке товаров из Турции
+              </p>
+            </li>
+            <li class="home-project__item">
+              <img
+                src="img/project-2.webp"
+                alt=""
+                class="home-project__item-img"
+              />
+              <h3 class="home-project__item-title">Turkberi</h3>
+              <p class="home-project__item-text">
+                Turkberi — сервис, позволящий закупать товары в розницу с
+                турецких интернет-магазинов с доставкой на дом
+              </p>
+            </li>
+            <li class="home-project__item">
+              <img
+                src="img/project-3.webp"
+                alt=""
+                class="home-project__item-img"
+              />
+              <h3 class="home-project__item-title">Turkargo</h3>
+              <p class="home-project__item-text">
+                Turkargo — транспортная компания, занимающаяся доставкой товаров
+                из турции в такие страны как Россия, Украина, Казахстан
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-footer" style="background-image: url(img/footer-bg.webp)">
+      <div class="container-header">
+        <div class="home-footer__inner">
+          <div class="home-footer__content">
+            <h2 class="home-footer__title title-h2-light">
+              Наши <span>контакты</span>
+            </h2>
+            <ul class="home-footer__list">
+              <li class="home-footer__item">
+                <span class="home-footer__item-title">Телефон</span>
+                <a
+                  class="home-footer__item-link"
+                  href="tel:+905550049899"
+                  style="--data-icon: url(../img/icons/phone.svg)"
+                  >+90 (555) 004-98-99</a
+                >
+              </li>
+              <li class="home-footer__item">
+                <span class="home-footer__item-title">Адрес</span>
+                <a
+                  class="home-footer__item-link home-footer__item-link--no-icon"
+                  href="https://www.google.ru/maps/place/%C4%B0kbal+Sk.,+Fatih%2F%C4%B0stanbul,+%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F/@41.0080852,28.9580353,17z/data=!3m1!4b1!4m8!1m2!2m1!1sMimar+Kemalettin,+Mah.+%C4%B0kbal+Sk.+%E2%84%96+9+Megapol+is+Merkezi+Kat:+1+%E2%84%96+42+Fatih%2F%C4%B0stanbul!3m4!1s0x14cab9858d4d6b47:0xe6ba3eb8d945880c!8m2!3d41.0080812!4d28.9602293"
+                  >Mimar Kemalettin, Mah. İkbal Sk. № 9 Megapol is Merkezi Kat:
+                  1 № 42 Fatih/İstanbul</a
+                >
+              </li>
+              <li class="home-footer__item">
+                <span class="home-footer__item-title">Почта</span>
+                <a
+                  class="home-footer__item-link"
+                  href="mailto:turkargo@gmail.com"
+                  style="--data-icon: url(../img/icons/message.svg)"
+                  >turkargo@gmail.com</a
+                >
+              </li>
+
+              <li class="home-footer__item">
+                <span class="home-footer__item-title">Социальные сети</span>
+                <ul class="home-footer__social">
+                  <li class="home-footer__social-item">
+                    <a
+                      href="#"
+                      class="home-footer__item-link"
+                      style="--data-icon: url(../img/icons/whatsapp.svg)"
+                    ></a>
+                  </li>
+                  <li class="home-footer__social-item">
+                    <a
+                      href="#"
+                      class="home-footer__item-link"
+                      style="--data-icon: url(../img/icons/youtube.svg)"
+                    ></a>
+                  </li>
+                  <li class="home-footer__social-item">
+                    <a
+                      href="#"
+                      class="home-footer__item-link"
+                      style="--data-icon: url(../img/icons/instagram.svg)"
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button class="home-footer__btn-feedback btn">
+              Перезвоните мне
+            </button>
+          </div>
+          <span class="home-footer__title-2">Ждем вас <br />в нашем офисе</span>
+        </div>
+      </div>
+    </div>
+@@include('parts/_footer.html')
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

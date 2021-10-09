@@ -1,0 +1,138 @@
+$white: #fff;
+$black: #030000;
+$red: #d01317;
+
+$screen-min: 320;
+$screen-max: 1440;
+$font-family: 'Gilroy', sans-serif;
+
+@mixin bold-38-29 {
+  @include fluid-type(700, 38, 46, $screen-min, $screen-max, 29, 35);
+}
+@mixin bold-36 {
+  @include fluid-type(700, 36, 44, $screen-min, $screen-max);
+}
+
+@mixin bold-28-19 {
+  @include fluid-type(700, 28, 34, $screen-min, $screen-max, 19, 23);
+}
+
+@mixin bold-18-14 {
+  @include fluid-type(700, 18, 22, $screen-min, $screen-max, 14, 17);
+}
+
+@mixin regular-16-13 {
+  @include fluid-type(400, 16, 19, $screen-min, $screen-max, 13, 15);
+}
+
+@mixin regular-14-11 {
+  @include fluid-type(400, 14, 16, $screen-min, $screen-max, 11, 13);
+}
+
+@mixin semibold-16 {
+  @include fluid-type(600, 16, 19, $screen-min, $screen-max);
+}
+
+@mixin fluid-type(
+  $font-weight,
+  $font-max,
+  $line-height-max,
+  $screen-min,
+  $screen-max,
+  $font-min: '',
+  $line-height-min: ''
+) {
+  font-weight: #{$font-weight};
+  font-family: $font-family;
+
+  @if $font-min != '' {
+    font-size: #{$font-min}px;
+  } @else {
+    font-size: #{$font-max}px;
+  }
+
+  @if $line-height-min != '' {
+    line-height: #{$line-height-min}px;
+  } @else {
+    line-height: #{$line-height-max}px;
+  }
+
+  @media (min-width: #{$screen-min}px) {
+    @if $font-min != '' {
+      font-size: calc(
+        #{$font-min}px +
+          #{($font-max - $font-min)} *
+          (100vw - #{$screen-min}px) /
+          (#{$screen-max} - #{$screen-min})
+      );
+    }
+    @if $line-height-min != '' {
+      line-height: calc(
+        #{$line-height-min}px +
+          #{($line-height-max - $line-height-min)} *
+          (100vw - #{$screen-min}px) /
+          (#{$screen-max} - #{$screen-min})
+      );
+    }
+  }
+
+  @media (min-width: #{$screen-max}px) {
+    font-size: #{$font-max}px;
+    line-height: #{$line-height-max}px;
+  }
+}
+
+@mixin fluid-value(
+  $name-prop,
+  $prop-max,
+  $prop-min,
+  $screen-max-loc: '',
+  $screen-min-loc: ''
+) {
+  @if $screen-min-loc == '' {
+    $screen-min-loc: $screen-min;
+  }
+  @if $screen-max-loc == '' {
+    $screen-max-loc: $screen-max;
+  }
+  #{$name-prop}: calc(
+    #{$prop-min}px + #{($prop-max - $prop-min)} * (100vw - #{$screen-min-loc}px) /
+      (#{$screen-max-loc} - #{$screen-min-loc})
+  );
+
+  @media (min-width: #{$screen-max}px) {
+    #{$name-prop}: #{$prop-max}px;
+  }
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+    $rot: -65;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2)
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}

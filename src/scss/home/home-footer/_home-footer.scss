@@ -1,0 +1,91 @@
+.home-footer {
+  background-color: $black;
+  &__inner {
+    padding: 194px 0 160px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    justify-self: start;
+  }
+  &__title {
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 75px;
+    row-gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+  }
+
+  &__item-title {
+    @include regular-14-11;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &__item-link {
+    @include semibold-16;
+    display: flex;
+    align-items: center;
+    &--no-icon {
+      &::before {
+        display: none !important;
+      }
+    }
+    &:nth-child(2) {
+      max-width: 337px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      background-image: var(--data-icon);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-item {
+    & + & {
+      margin-left: 20px;
+    }
+  }
+
+  &__btn-feedback {
+  }
+
+  &__title-2 {
+    @include bold-36;
+    justify-self: end;
+    align-self: end;
+    color: $white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: url(../img/icons/blot.svg);
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 30%;
+      display: block;
+    }
+  }
+}

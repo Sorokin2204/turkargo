@@ -1,0 +1,38 @@
+.home-discount {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 567px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include regular-16-13;
+    color: $white;
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 30px;
+  }
+
+  &__input {
+  }
+
+  &__btn-feedback {
+  }
+
+  &__img {
+    max-width: 470px;
+  }
+}

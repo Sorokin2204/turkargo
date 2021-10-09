@@ -1,0 +1,49 @@
+.home-project {
+  background-color: $black;
+  &__inner {
+    padding: 100px 0;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    @include regular-14-11;
+    text-align: center;
+    color: $white;
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-gap: 50px;
+  }
+
+  &__item {
+    max-height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-img {
+    max-height: 200px;
+    margin: auto;
+  }
+
+  &__item-title {
+    @include bold-18-14;
+    color: $white;
+
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    @include regular-16-13;
+    color: $white;
+    text-align: center;
+    height: 3.57em;
+  }
+}

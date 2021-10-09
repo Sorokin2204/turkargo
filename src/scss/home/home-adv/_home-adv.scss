@@ -1,0 +1,34 @@
+.home-adv {
+  &__inner {
+    padding: 100px 0;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__adv {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: space-between;
+    row-gap: 70px;
+  }
+
+  &__adv-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__adv-img {
+    margin-right: 20px;
+  }
+
+  &__adv-title {
+    @include bold-18-14;
+    margin-bottom: 10px;
+  }
+
+  &__adv-text {
+    @include regular-16-13;
+  }
+}

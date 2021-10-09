@@ -1,0 +1,16 @@
+.home-news {
+  &__inner {
+    padding: 90px 0 100px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__btn-more {
+    display: block;
+    margin: 60px auto 0 auto;
+    max-width: 250px;
+    width: 100%;
+  }
+}

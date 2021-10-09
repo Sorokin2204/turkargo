@@ -1,0 +1,35 @@
+@import 'fonts';
+@import 'var';
+//@import 'form-reset';
+@import 'reset';
+@import 'global';
+
+@import 'header/header';
+@import 'header/header-media';
+
+@import 'footer/footer.scss';
+@import 'footer/footer-media.scss';
+
+@import 'home/home-banner/home-banner.scss';
+@import 'home/home-banner/home-banner-media.scss';
+
+@import 'home/home-price/home-price';
+@import 'home/home-price/home-price-media';
+
+@import 'home/home-adv/home-adv';
+@import 'home/home-adv/home-adv-media';
+
+@import 'home/home-discount/home-discount';
+@import 'home/home-discount/home-discount-media';
+
+@import 'home/home-plan/home-plan';
+@import 'home/home-plan/home-plan-media';
+
+@import 'home/home-news/home-news';
+@import 'home/home-news/home-news-media';
+
+@import 'home/home-project/home-project';
+@import 'home/home-project/home-project-media';
+
+@import 'home/home-footer/home-footer';
+@import 'home/home-footer/home-footer-media';
