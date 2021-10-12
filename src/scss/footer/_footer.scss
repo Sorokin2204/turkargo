@@ -1,12 +1,17 @@
 .footer {
   background-color: $black;
-  padding: 40px 0;
+
   &__inner {
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__logo {
+  }
+
+  .menu__item + .menu__item {
+    margin-left: 50px;
   }
 }

@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+  .home-project {
+    &__inner {
+      padding: 60px 0;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+
+    &__list {
+      grid-template-columns: 23em;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 30px;
+    }
+
+    &__item-img {
+      margin-bottom: 20px;
+    }
+  }
+}

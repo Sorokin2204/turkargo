@@ -1,0 +1,64 @@
+@media (max-width: 1024px) {
+  .home-discount {
+    &__inner {
+      padding-top: 60px;
+    }
+    &__content {
+      flex-basis: 50%;
+      max-width: 300px;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+    &__btn-feedback {
+      justify-self: start;
+      width: 250px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-discount {
+    &__inner {
+      padding-top: 30px;
+      align-items: center;
+      grid-template-columns: 1fr;
+    }
+
+    &__img {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      justify-self: center;
+      margin-bottom: 30px;
+      // max-width: 400px;
+      margin-left: 0;
+    }
+
+    &__form {
+      grid-row: 3/4;
+      padding: 0 20px;
+    }
+    &__content {
+      max-width: none;
+    }
+
+    &__btn-feedback {
+      width: 100%;
+    }
+    &__text {
+      margin-bottom: 0px;
+    }
+  }
+}

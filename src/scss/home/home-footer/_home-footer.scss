@@ -1,5 +1,8 @@
 .home-footer {
   background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
   &__inner {
     padding: 194px 0 160px;
     display: flex;
@@ -37,24 +40,11 @@
     @include semibold-16;
     display: flex;
     align-items: center;
-    &--no-icon {
-      &::before {
-        display: none !important;
-      }
-    }
     &:nth-child(2) {
       max-width: 337px;
     }
     &:before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
       margin-right: 10px;
-      background-image: var(--data-icon);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
     }
   }
 
@@ -84,7 +74,7 @@
       position: absolute;
       z-index: -1;
       top: 0;
-      left: 30%;
+      left: 29%;
       display: block;
     }
   }

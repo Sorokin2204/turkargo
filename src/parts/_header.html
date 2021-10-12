@@ -1,6 +1,9 @@
 <header class="header">
   <div class="container-header">
     <div class="header__inner">
+      <button class="header__btn-menu-open">
+        <div></div>
+      </button>
       <img src="img/logo.webp" alt="" class="header__logo" />
       <div class="lang no-selection">
         <input
@@ -49,10 +52,61 @@
           </li>
         </ul>
       </nav>
-      <a class="header__phone" href="tel:+905550049899">+90 (555) 004-98-99</a>
+
+      <a
+        class="header__phone icon"
+        style="--data-icon: url(../img/icons/phone.svg)"
+        href="tel:+905550049899"
+        >+90 (555) 004-98-99</a
+      >
       <button class="header__btn-feedback btn btn--outline">
         Обратный звонок
       </button>
     </div>
+  </div>
+</header>
+
+<header class="header header--mobile">
+  <div class="header__inner">
+    <button class="header__btn-menu-close"></button>
+    <nav class="header__nav">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Главная</a>
+        </li>
+        <li class="menu__item menu__item--submenu">
+          <a href="#" class="menu__link">Тарифы</a>
+          <ul class="menu__submenu">
+            <li class="menu__submenu-item">
+              <a href="#" class="menu__submenu-link">Россия</a>
+            </li>
+            <li class="menu__submenu-item">
+              <a href="#" class="menu__submenu-link">Казахстан</a>
+            </li>
+            <li class="menu__submenu-item">
+              <a href="#" class="menu__submenu-link">Украина</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">FAQ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Блог</a>
+        </li>
+      </ul>
+    </nav>
+    <a
+      class="header__phone icon"
+      style="--data-icon: url(../img/icons/phone.svg)"
+      href="tel:+905550049899"
+      >+90 (555) 004-98-99</a
+    >
+    <button class="header__btn-feedback btn btn--outline">
+      Обратный звонок
+    </button>
   </div>
 </header>

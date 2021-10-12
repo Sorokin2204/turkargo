@@ -1,0 +1,14 @@
+@media (max-width: 1024px) {
+  .home-news {
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__inner {
+      padding: 60px 0;
+    }
+
+    &__btn-more {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@media (max-width: 1024px) {
+  .home-adv {
+    &__inner {
+      padding: 60px 0;
+    }
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__adv {
+      grid-template-columns: repeat(1, minmax(auto, 510px));
+      row-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-adv {
+    &__adv {
+      row-gap: 40px;
+      grid-template-columns: repeat(1, minmax(auto, 300px));
+      justify-content: center;
+    }
+
+    &__adv-item {
+      flex-direction: column;
+    }
+
+    &__adv-title {
+      text-align: center;
+    }
+    &__adv-text {
+      text-align: center;
+    }
+  }
+}

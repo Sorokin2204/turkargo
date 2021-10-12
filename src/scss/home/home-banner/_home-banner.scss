@@ -1,26 +1,38 @@
 .home-banner {
   &__inner {
-    padding: 120px 0 110px;
+    @include fluid-value('padding-top', 120, 40, '', 768);
+    @include fluid-value('padding-bottom', 110, 60, '', 768);
   }
 
   &__title {
     @include bold-38-29;
-
-    color: $white;
+    //  @include fluid-value(' margin-bottom', 40, 15, '', 1024);
     margin-bottom: 40px;
+    color: $white;
     span {
       color: $red;
     }
+    max-width: 18.1em;
   }
 
   &__subtitle {
     @include bold-18-14;
+
+    //  @include fluid-value(' margin-bottom', 60, 40, '', 1024);
     color: $white;
     margin-bottom: 60px;
   }
 
   &__btn-feedback {
+    //@include fluid-value(' margin-bottom', 160, 100, '', 1024);
     margin-bottom: 160px;
+  }
+
+  &__img {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
   }
 
   &__adv {
@@ -30,7 +42,7 @@
 
   &__adv-item {
     flex-grow: 1;
-    max-width: 274px;
+    max-width: 15em;
     display: inline-block;
     &:nth-child(2) {
       position: relative;

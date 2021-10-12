@@ -1,6 +1,6 @@
 .home-price {
   &__inner {
-    padding-bottom: 135px;
+    @include fluid-value('padding-bottom', 135, 60, '', 768);
   }
 
   &__title {
@@ -23,10 +23,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 180px;
   }
 
   &__country-img {
-    max-width: 200px;
+    width: 100%;
+    height: auto;
     margin-bottom: 30px;
   }
 
@@ -37,6 +39,7 @@
   }
 
   &__country-type {
+    margin-bottom: 30px;
   }
 
   &__country-type-item {
@@ -45,17 +48,13 @@
     display: flex;
     align-items: center;
     &::before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
       margin-right: 10px;
-      background-image: var(--data-icon);
-      background-repeat: no-repeat;
-      background-position: center;
     }
     & + & {
       margin-top: 10px;
     }
+  }
+  &__btn-more {
+    width: 100%;
   }
 }

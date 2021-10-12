@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+  .footer {
+    &__inner {
+      padding: 20px 0;
+    }
+    .menu__item + .menu__item {
+      margin-left: 40px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    &__inner {
+      padding: 0 0 20px 0;
+      flex-direction: column;
+    }
+    .menu__item + .menu__item {
+      margin-left: 20px;
+    }
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <div class="overlay"></div>
     <section
-      class="home-top-section"
-      style="background-image: url(img/header-banner.webp)"
+      class="home-section-top"
+      style="
+        --data-bg-desktop: url(../img/header-banner.webp);
+        --data-bg-tablet: url(../img/header-banner-tablet.webp);
+        --data-bg-mobile: url(../img/header-banner-mobile.webp);
+      "
     >
       @@include('parts/_header.html')
       <div class="home-banner">
@@ -22,6 +27,7 @@
             <p class="home-banner__subtitle">
               Оставьте заявку на доставку и получите скидку на первую отправку
             </p>
+            <img src="img/banner-img.webp" alt="" class="home-banner__img" />
             <button class="home-banner__btn-feedback btn">
               Оставить заявку
             </button>
@@ -80,18 +86,19 @@
                 <h3 class="home-price__country-title">Россия</h3>
                 <ul class="home-price__country-type">
                   <li
-                    class="home-price__country-type-item"
+                    class="home-price__country-type-item icon"
                     style="--data-icon: url(../img/icons/plane.svg)"
                   >
                     Авиа от 6$
                   </li>
                   <li
-                    class="home-price__country-type-item"
+                    class="home-price__country-type-item icon"
                     style="--data-icon: url(../img/icons/truck.svg)"
                   >
                     Авто от 1.5$
                   </li>
                 </ul>
+                <button class="home-price__btn-more btn">Подробнее</button>
               </li>
               <li class="home-price__country-item">
                 <img
@@ -102,18 +109,19 @@
                 <h3 class="home-price__country-title">Казахстан</h3>
                 <ul class="home-price__country-type">
                   <li
-                    class="home-price__country-type-item"
+                    class="home-price__country-type-item icon"
                     style="--data-icon: url(../img/icons/plane.svg)"
                   >
                     Авиа от 5.2$
                   </li>
                   <li
-                    class="home-price__country-type-item"
+                    class="home-price__country-type-item icon"
                     style="--data-icon: url(../img/icons/truck.svg)"
                   >
                     Авто от 1.5$
                   </li>
                 </ul>
+                <button class="home-price__btn-more btn">Подробнее</button>
               </li>
               <li class="home-price__country-item">
                 <img
@@ -124,18 +132,19 @@
                 <h3 class="home-price__country-title">Украина</h3>
                 <ul class="home-price__country-type">
                   <li
-                    class="home-price__country-type-item"
+                    class="home-price__country-type-item icon"
                     style="--data-icon: url(../img/icons/plane.svg)"
                   >
                     Авиа от 6$
                   </li>
                   <li
-                    class="home-price__country-type-item"
+                    class="home-price__country-type-item icon"
                     style="--data-icon: url(../img/icons/truck.svg)"
                   >
                     Авто от 1.5$
                   </li>
                 </ul>
+                <button class="home-price__btn-more btn">Подробнее</button>
               </li>
             </ul>
           </div>
@@ -216,7 +225,7 @@
     </div>
 
     <div
-      class="home-middle-section"
+      class="home-section-middle"
       style="background-image: url(img/discount-bg.webp)"
     >
       <div class="home-discount">
@@ -231,27 +240,27 @@
                 знать какой вид товара вы хотите отправить. Оставьте заявку на
                 доставку и получите скидку на первую отправку.
               </p>
-              <form class="home-discount__form">
-                <input
-                  type="text"
-                  class="home-discount__input input"
-                  placeholder="Ваше имя"
-                />
-                <input
-                  type="text"
-                  class="home-discount__input input"
-                  placeholder="Город"
-                />
-                <input
-                  type="tel"
-                  class="home-discount__input input"
-                  placeholder="Номер телефона"
-                />
-                <button class="home-discount__btn-feedback btn">
-                  Оставить заявку
-                </button>
-              </form>
             </div>
+            <form class="home-discount__form">
+              <input
+                type="text"
+                class="home-discount__input input"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="text"
+                class="home-discount__input input"
+                placeholder="Город"
+              />
+              <input
+                type="tel"
+                class="home-discount__input input"
+                placeholder="Номер телефона"
+              />
+              <button class="home-discount__btn-feedback btn">
+                Оставить заявку
+              </button>
+            </form>
             <img src="img/discount-1.webp" alt="" class="home-discount__img" />
           </div>
         </div>
@@ -543,7 +552,7 @@
               <li class="home-footer__item">
                 <span class="home-footer__item-title">Телефон</span>
                 <a
-                  class="home-footer__item-link"
+                  class="home-footer__item-link icon"
                   href="tel:+905550049899"
                   style="--data-icon: url(../img/icons/phone.svg)"
                   >+90 (555) 004-98-99</a
@@ -552,7 +561,7 @@
               <li class="home-footer__item">
                 <span class="home-footer__item-title">Адрес</span>
                 <a
-                  class="home-footer__item-link home-footer__item-link--no-icon"
+                  class="home-footer__item-link"
                   href="https://www.google.ru/maps/place/%C4%B0kbal+Sk.,+Fatih%2F%C4%B0stanbul,+%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F/@41.0080852,28.9580353,17z/data=!3m1!4b1!4m8!1m2!2m1!1sMimar+Kemalettin,+Mah.+%C4%B0kbal+Sk.+%E2%84%96+9+Megapol+is+Merkezi+Kat:+1+%E2%84%96+42+Fatih%2F%C4%B0stanbul!3m4!1s0x14cab9858d4d6b47:0xe6ba3eb8d945880c!8m2!3d41.0080812!4d28.9602293"
                   >Mimar Kemalettin, Mah. İkbal Sk. № 9 Megapol is Merkezi Kat:
                   1 № 42 Fatih/İstanbul</a
@@ -561,7 +570,7 @@
               <li class="home-footer__item">
                 <span class="home-footer__item-title">Почта</span>
                 <a
-                  class="home-footer__item-link"
+                  class="home-footer__item-link icon"
                   href="mailto:turkargo@gmail.com"
                   style="--data-icon: url(../img/icons/message.svg)"
                   >turkargo@gmail.com</a
@@ -574,21 +583,21 @@
                   <li class="home-footer__social-item">
                     <a
                       href="#"
-                      class="home-footer__item-link"
+                      class="home-footer__item-link icon"
                       style="--data-icon: url(../img/icons/whatsapp.svg)"
                     ></a>
                   </li>
                   <li class="home-footer__social-item">
                     <a
                       href="#"
-                      class="home-footer__item-link"
+                      class="home-footer__item-link icon"
                       style="--data-icon: url(../img/icons/youtube.svg)"
                     ></a>
                   </li>
                   <li class="home-footer__social-item">
                     <a
                       href="#"
-                      class="home-footer__item-link"
+                      class="home-footer__item-link icon"
                       style="--data-icon: url(../img/icons/instagram.svg)"
                     ></a>
                   </li>
@@ -603,7 +612,8 @@
         </div>
       </div>
     </div>
-@@include('parts/_footer.html')
+
+    @@include('parts/_footer.html')
     <script src="js/script.min.js"></script>
   </body>
 </html>

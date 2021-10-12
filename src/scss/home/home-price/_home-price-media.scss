@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+  .home-price {
+    &__subtitle {
+      margin: 0 auto 40px auto;
+      max-width: 300px;
+    }
+
+    &__country-img {
+      margin-bottom: 18px;
+    }
+
+    &__country-title {
+      margin-bottom: 15px;
+    }
+
+    &__country-item {
+      max-width: 220px;
+    }
+
+    &__country-type {
+      margin-bottom: 15px;
+    }
+
+    &__country-img {
+      max-width: 220px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .home-price {
+    &__country {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__country-item {
+      max-width: 180px;
+      & + & {
+        margin-top: 36px;
+      }
+    }
+  }
+}

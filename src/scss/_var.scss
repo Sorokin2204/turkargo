@@ -2,7 +2,7 @@ $white: #fff;
 $black: #030000;
 $red: #d01317;
 
-$screen-min: 320;
+$screen-min: 768;
 $screen-max: 1440;
 $font-family: 'Gilroy', sans-serif;
 
@@ -103,6 +103,10 @@ $font-family: 'Gilroy', sans-serif;
   @media (min-width: #{$screen-max}px) {
     #{$name-prop}: #{$prop-max}px;
   }
+
+  @media (max-width: #{$screen-min}px) {
+    #{$name-prop}: #{$prop-min}px;
+  }
 }
 
 @mixin on-circle($item-count, $circle-size, $item-size) {
@@ -124,15 +128,16 @@ $font-family: 'Gilroy', sans-serif;
 
     $angle: (360 / $item-count);
     $rot: -65;
+    @media (min-width: 1024px) {
+      @for $i from 1 through $item-count {
+        &:nth-of-type(#{$i}) {
+          transform: rotate($rot * 1deg)
+            translate($circle-size / 2)
+            rotate($rot * -1deg);
+        }
 
-    @for $i from 1 through $item-count {
-      &:nth-of-type(#{$i}) {
-        transform: rotate($rot * 1deg)
-          translate($circle-size / 2)
-          rotate($rot * -1deg);
+        $rot: $rot + $angle;
       }
-
-      $rot: $rot + $angle;
     }
   }
 }
